@@ -17,4 +17,9 @@
   + include ToDoApp/urls.py in djangosite/urls.py - to keep applictaion paths separated
   + implement index method in ToDoApp/views.py
     - this method will use its own html file in the future
+8. Create persistence models:
+  + djangosite/settings.py - add ToDoApp to the installed apps list
+  + visit models.py - to provide classes definitions for the persistence layer
+  + python manage.py makemigrations ToDoApp - to create the db schema for the models
+    - visit ToDoApp/migrations directory to see what happened
 
