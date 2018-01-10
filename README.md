@@ -9,3 +9,12 @@
 4. python manage.py migrate - to migrate models into db.sqlite3 database schema
 5.python manage.py createsuperuser - to...surprise - create the superuser :)
 6. python manage.py startapp ToDoApp - to create the application layout
+
+====== CREATE SOME LOGIC ======
+7. Create the index page logic:
+  + create ToDoApp/urls.py with the application relative paths
+    - the views.index is the method reference in ToDoApp/views.py
+  + include ToDoApp/urls.py in djangosite/urls.py - to keep applictaion paths separated
+  + implement index method in ToDoApp/views.py
+    - this method will use its own html file in the future
+
