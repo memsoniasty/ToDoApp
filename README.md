@@ -49,4 +49,5 @@
     >>>
   + add appropriate code to ToDoApp/admin.py - to register the models on the admin page
     - go to <server_ip>:<port>/admin - to see all your data
-
+9. Use persisted data in the index view method
+  + still waiting for the full html template...
