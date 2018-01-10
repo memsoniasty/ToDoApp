@@ -51,3 +51,11 @@
     - go to <server_ip>:<port>/admin - to see all your data
 9. Use persisted data in the index view method
   + still waiting for the full html template...
+
+====== START PLAYING WITH HTML ======
+10. Finally...use html template for the index page
+  + create the index.html file in 'templates/ToDoApp' directory
+  + templating language here is not Jinja2, but Django's DTL
+    - https://docs.djangoproject.com/en/2.0/topics/templates/
+  + second render method parameter is relevant to the 'templates' directory
+

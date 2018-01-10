@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ToDoApp</title>
+    </head>
+    <body>
+        <h1 align="center">ToDoApp's Home</h1>
+        {% if todo_lists %}
+            {% for todo_list in todo_lists %}
+                <h3>{{todo_list.name}}</h3>
+                <ul>
+                    {% for todo_task in todo_list.todotask_set.all %}
+                        <li>{{todo_task.todo_text}} --> {{todo_task.date_created}}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        {% else %}
+            <p>No lists available. Please create some!</p>
+        {% endif %}
+    </body>
+</html>
