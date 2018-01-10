@@ -7,3 +7,4 @@
 ====== START THE PROJECT ======
 3. django-admin startproject djangosite - to create the site layout
 4. python manage.py migrate - to migrate models into db.sqlite3 database schema
+5.python manage.py createsuperuser - to...surprise - create the superuser :)
