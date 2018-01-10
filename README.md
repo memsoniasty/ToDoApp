@@ -5,4 +5,5 @@
   + after this process is complete, go to Terminal in PyCharm and type: django-admin --version
 
 ====== START THE PROJECT ======
-3. django-admin startproject djangosite to create the site layout
+3. django-admin startproject djangosite - to create the site layout
+4. python manage.py migrate - to migrate models into db.sqlite3 database schema
