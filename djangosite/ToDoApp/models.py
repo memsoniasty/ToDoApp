@@ -12,7 +12,7 @@ class ToDoTask(models.Model):
     is_todo = models.BooleanField(default=False)
     is_inprogress = models.BooleanField(default=False)
     is_done = models.BooleanField(default=False)
-    date_finished = models.DateTimeField('date finished')
+    date_finished = models.DateTimeField(default=None, null=True, verbose_name='date finished')
 
     list_ref = models.ForeignKey(ToDoList, on_delete=models.DO_NOTHING)
 
