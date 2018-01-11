@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load staticfiles %}
     <head>
         <meta charset="UTF-8">
         <title>ToDoApp</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'ToDoApp/bootstrap-3.3.7/css/bootstrap.min.css' %}"/>
     </head>
     <body>
-        <h1 align="center">ToDoApp's Home</h1>
+        <h1 align="center"><span class="label label-primary">ToDoApp's Home</span></h1>
         {% if todo_lists %}
             {% for todo_list in todo_lists %}
-                <h3>{{todo_list.name}}</h3>
-                <ul>
-                    {% for todo_task in todo_list.todotask_set.all %}
-                        <li>{{todo_task.todo_text}} --> {{todo_task.date_created}}</li>
-                    {% endfor %}
-                </ul>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><b>{{todo_list.name}}</b></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            {% for todo_task in todo_list.todotask_set.all %}
+                                <li>{{todo_task.todo_text}} --> {{todo_task.date_created}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             {% endfor %}
         {% else %}
             <p>No lists available. Please create some!</p>

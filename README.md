@@ -58,4 +58,9 @@
   + templating language here is not Jinja2, but Django's DTL
     - https://docs.djangoproject.com/en/2.0/topics/templates/
   + second render method parameter is relevant to the 'templates' directory
-
+11. Add Bootstrap to the project:
+  + ToDoApp/static/ToDoApp/static/bootstrap-3.3.7 directory copied from the official Bootstrap page
+  + Modify the index.html page to load staticfiles and use the bootstrap.min.css  as the stylesheet
+    - this "link rel" should be moved to the base.html template in the future
+  + use the Bootstrap css classes from the library
+    - https://getbootstrap.com/docs/3.3/components/#panels
