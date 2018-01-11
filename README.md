@@ -64,3 +64,6 @@
     - this "link rel" should be moved to the base.html template in the future
   + use the Bootstrap css classes from the library
     - https://getbootstrap.com/docs/3.3/components/#panels
+12. Add navigation bar
+  + bootstrap.min.js and jquery-1.12.2.min.js scripts in head zone
+  + nav element added in body
