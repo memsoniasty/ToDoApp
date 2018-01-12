@@ -67,9 +67,21 @@
 12. Add navigation bar
   + bootstrap.min.js and jquery-1.12.2.min.js scripts in head zone
   + nav element added in body
+
+====== UNIT TESTING ======
 13. Add UnitTests with xml-reporting:
   + install xml-reporting package:
     - File/Settings/Project:ToDoApp/Project Interpreter/'Plus icon'/unittest-xml-reporting/ Install Package
   + edit djangosite/settings.py to use the XMLTestRunner
   + create test logic in ToDoApp/tests.py
     - test creates the mock user, builds a request and tries to get the index page status
+
+====== LOGIN ======
+14. Add basic login functionality:
+  +  create ToDoApp/templates/registration/login.html
+    - csrf token is a Cross Site Request Forgery security: https://docs.djangoproject.com/en/2.0/ref/csrf/
+  + define login redirection page in djangosite/settings.py
+  + provide login and logout url paths in urls.py
+  + rename one navbar button in index.html to be the Logout
+  + use information if the user is authenticated to generate the proper index response
+
