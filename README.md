@@ -67,3 +67,9 @@
 12. Add navigation bar
   + bootstrap.min.js and jquery-1.12.2.min.js scripts in head zone
   + nav element added in body
+13. Add UnitTests with xml-reporting:
+  + install xml-reporting package:
+    - File/Settings/Project:ToDoApp/Project Interpreter/'Plus icon'/unittest-xml-reporting/ Install Package
+  + edit djangosite/settings.py to use the XMLTestRunner
+  + create test logic in ToDoApp/tests.py
+    - test creates the mock user, builds a request and tries to get the index page status
